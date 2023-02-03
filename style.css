@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 1rem;
+
+}
+h2{
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: dimgray;
+    margin-left: 10px;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: normal;
+    color: dimgray;
+
+    padding: 0;
+}
+.border{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    color: grey;
+    width: 677px;
+    margin: 15rem auto;
+    padding: 15px;
+}
+.section1 , .section2, .section3{
+    margin: auto;
+
+    border-width: 2px;
+    width: 635px;
+    padding: 15px;
+
+}
+.bouton{
+    margin:auto auto;
+    width: 100px;
+    display: flex;
+    padding-top: 20px;
+
+
+}
+.bouton1 {
+    margin-right:10px ;
+    padding:10px ;
+    font-size: 14px;
+    border-radius: 0px;
+}
+input:focus:invalid{
+    background-color: deeppink;
+    margin-bottom: 10px;
+}
+.boite1 label:nth-of-type(-1n + 3) input:focus:invalid, .boite1 input:valid {
+    background-image: url("../Exame_Form_JS/img/check_green.webp");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.invisible{
+    display: none;
+}
+#erreur_mdp{
+    color: red;
+}
+
+/*Este é o arquivo CSS da página HTML. Ele fornece as regras de estilo para a página.
+
+A primeira regra *{...} define que não há espaço extra (padding e margin) em todos os elementos da página, e todos os elementos usarão o box-sizing: border-box.
+A regra html define o tamanho da fonte como 16 pixels.
+A regra body define o tamanho da fonte como 1 rem.
+A regra h2 define o estilo para o cabeçalho h2 (cor, família de fontes, tamanho, etc.).
+A regra h1 define o estilo para o cabeçalho h1 (cor, família de fontes, tamanho, etc.).
+A regra .border define a aparência do elemento com classe "border" (cor, borda, tamanho, etc.)
+As regras .section1, .section2 e .section3 definem a aparência das seções dentro da div .border.
+A regra .bouton define a aparência dos botões na página.
+A regra .bouton1 define a aparência de um botão específico.
+A regra input define o estilo para todos os elementos de entrada na página.
+A regra .boite1 label:nth-of-type(-1n + 3) input:focus:invalid, .boite1 input:valid adiciona uma imagem de verificação verde aos campos de entrada válidos.
+A regra .invisible define que elementos com classe "invisible" não serão exibidos.
+A regra #erreur_mdp define a cor vermelha para o elemento com id "erreur_mdp".*/

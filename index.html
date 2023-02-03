@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen formulaires JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+
+
+<div class="border">
+    <form method="post" action="mailto:prof@cegep.com" name="form">
+        <div class="boite1">
+            <h1> Fomulaire d'inscription</h1>
+            <div class="section1">
+                <label>Nom d'utilisateur: <input name="nom" id="username" type="text" maxlength="100" minlength="2" required
+                                                 pattern="[a-zA-Z0-9-]+"/></label><br/>
+                <label>Courriel: <input name="courriel" type="email" required placeholder="user@domaine.com"
+                                        pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/></label><br/>
+                <label for="mdp"> Mot passe <input name="mdp" id="mdp" type="password" required></label><br/>
+                <p id="erreur_mdp" class="invisible">Le mot de passe doit être différent du nom</p>
+                <label>
+                    Sexe : <input type="radio" name="sexe" value="F"> Femme
+                    <input type="radio" name="sexe" value="M"> Homme
+                    <input type="radio" name="sexe" value="A"> Autre
+                </label><br/>
+
+                <label for="date">
+                    Date de naisssance:<br/>
+                    <input type="date" name="date" id="date" required>
+                </label><br/>
+
+                <h4>Veuillez m'envoyer</h4>
+                <div class="section3">
+                    <label><input type="checkbox" name="infoletre" id="infoletre"> Infolettre</label><br/>
+                    <label><input type="checkbox" name="offres" id="offres"> Offres promotionneles</label><br/>
+                </div>
+                <div class="bouton">
+                    <input class="bouton1" type="submit" value="Envoyer" onclick="return valider()"/>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+<!--
+Este código é um exemplo de formulário HTML5 com JavaScript. Ele contém as seguintes características:
+
+DOCTYPE: A primeira linha declara o tipo de documento como HTML5.
+
+Língua: O atributo de idioma "lang =" en "define o idioma como inglês.
+
+Cabeçalho: O cabeçalho contém meta informações, como a codificação de caracteres "UTF-8", e um título para a página. Além disso, há um link para o arquivo CSS e um link para o arquivo JavaScript.
+
+Corpo: O corpo da página contém o formulário em si. O método de envio é "post" e a ação é "mailto: prof@cegep.com". O formulário tem um nome "form".
+
+Seções do formulário: O formulário é dividido em três seções:
+
+A primeira seção inclui um título "Fomulaire d'inscription" e campos para inserir o nome, o e-mail, a senha, o gênero e a data de nascimento.
+
+A segunda seção inclui duas opções de checkbox para se inscrever na infolettre e nas ofertas promocionais.
+
+A terceira seção inclui um botão de envio que chama a função "valider ()" do arquivo JavaScript.
+
+Validação: O formulário inclui algumas validações básicas, como a verificação do tipo de entrada (texto, e-mail, senha, etc.),
+
+comprimento mínimo e máximo, padrão de entrada e a presença de valores obrigatórios. Além disso, a função "valider ()" no arquivo JavaScript pode fornecer uma validação adicional antes de enviar o formulário.
+-->
